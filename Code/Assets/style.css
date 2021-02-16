@@ -1,0 +1,144 @@
+.hero-image {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d6/Green_mountains_icon.png"); /* The image used */
+    background-color:#100c0c; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: repeat-x; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+  padding-top: 80px;
+}
+
+#home {
+  width: 250px;
+  height: 80px;
+  float: left;
+  text-align: center;
+  line-height: 70px;
+  color: #339966;
+  font-weight: 650;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.card {
+  background: #ffffff;
+  margin: 0 0 40px 0;
+  width: 100%;
+  max-width: 960px;
+  float: left;
+  border: 2px solid gray;
+
+}
+
+#Conor {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  float: left;
+  border: 1px solid gray;
+}
+
+h1 {
+  color: #339966;
+  font-weight: 650;
+  font-size: 25px;
+  text-decoration: none;
+}
+.images {
+  height: 350px;
+  width: 350px;
+}
+
+/* Start Media Query */
+/* A Media Query max-width: 980px */
+@media screen and (max-width: 980px) {
+  /* Resized content to fit 980px  */
+      .container {
+          max-width: 980px;
+      }
+  /* Resized main-content to fit 980px  */
+      .main {
+          width: 80%;
+          margin-left: 10%; 
+          margin-right: 10%; 
+      }
+      /* Moves logo */
+      #logo { 
+          margin-left: 10%;
+  }
+  /* Moves Nav  */
+  nav {
+      margin-right: 10%;
+  }
+  
+  }
+  
+  /* A Media Query max-width: 786px */
+  @media screen and (max-width: 786px) {
+  /* Resized content to fit 786px  */
+      .container {
+          max-width: 786px;
+      }
+  /* Resized main-content to fit 786px  */
+      .card {
+          width: 80%;
+          margin: 10%; 
+      }
+  /* Moves Nav  */
+      nav {
+          margin-right: 10%;
+      }
+  /* Respositions photo on portfolio page  */
+      .work {
+          width: 40%;
+          margin-left: 5%;
+          margin-right: 5%;
+      }
+      }
+      
+  /* A Media Query max-width: 640px */
+  @media screen and (max-width: 640px) {
+   /* Resized content to fit 640px  */
+      .container {
+          min-width: 640px;
+      }
+  /* Resized main-content to fit 640px  */
+      .card {
+          width: 80%;
+          margin: 10%; 
+      }
+  /* Moves logo  */
+      #logo { position: static;
+          margin: 0 auto;
+          margin-bottom: 20px;
+          width: 100%;
+      }
+  /* Moves Nav  */
+      nav {
+          margin-left: 24%;
+          margin-right: 24%;
+      }
+  /* Resizes photo and label heading */
+      .work {
+          width: 50%;
+          margin-left: 25%;
+          margin-right: 25%;
+      }
+  /* Selects element within a class */ 
+  /* Moves label and photo */ 
+      .work h3 {
+          padding: 10px; 
+      }
+  /* Resizes footer */
+      footer {
+          min-width: 640px;
+      }
+  }
+
